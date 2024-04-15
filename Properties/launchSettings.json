@@ -9,6 +9,14 @@
     }
   },
   "profiles": {
+    "start": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000", // Replace 5001 with your desired HTTPS port
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
+
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,
@@ -33,8 +41,9 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000;https://localhost:5001", // Replace 5001 with your desired HTTPS port
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     }
   }
